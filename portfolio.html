@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unises R. Carbajosa Jr. | Professional Portfolio</title>
+    <style>
+        :root {
+            --primary: #0a2540;
+            --secondary: #00d4b2;
+            --dark: #1c2a38;
+            --light: #f4f6f9;
+            --text: #333333;
+            --text-light: #666666;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: var(--secondary);
+        }
+
+        .header-container h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .header-container p {
+            font-size: 1.2rem;
+            color: #a0aec0;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--primary);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-top-color: var(--secondary);
+        }
+
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .contact-section {
+            background: white;
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            margin-top: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .contact-section h2 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary);
+            color: var(--primary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .header-container h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Unises R. Carbajosa Jr.</h1>
+            <p>Criminology | Cybersecurity | Public Relations | Safety Compliance</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2 style="text-align: center; color: var(--primary); margin-bottom: 10px;">Core Expertise & Achievements</h2>
+            <p style="text-align: center; color: var(--text-light); max-width: 600px; margin: 0 auto 30px;">A multi-disciplinary professional dedicated to community engagement, security infrastructure, public safety, and operational excellence.</p>
+            
+            <div class="grid">
+                <!-- Achievement 1 -->
+                <div class="card">
+                    <div class="card-icon">⚖️</div>
+                    <h3>Registered Criminologist</h3>
+                    <p>Certified practitioner with specialized knowledge in crime prevention, public safety systems, behavioral evaluation, and law enforcement frameworks to support community stability.</p>
+                </div>
+
+                <!-- Achievement 2 -->
+                <div class="card">
+                    <div class="card-icon">🛡️</div>
+                    <h3>Certified Cybersecurity Specialist</h3>
+                    <p>Skilled in identifying digital threats, securing networking architecture, data protection policies, and maintaining information security compliance across enterprise environments.</p>
+                </div>
+
+                <!-- Achievement 3 -->
+                <div class="card">
+                    <div class="card-icon">🤝</div>
+                    <h3>Community Relations Manager</h3>
+                    <p><strong>Bulacan Highlander Football Club</strong><br>Directing outreach initiatives, local stakeholder coordination, public relations strategies, and building impactful sports programs to foster community development.</p>
+                </div>
+
+                <!-- Achievement 4 -->
+                <div class="card">
+                    <div class="card-icon">⚠️</div>
+                    <h3>Safety Officer 2</h3>
+                    <p>Accredited risk management specialist managing workplace safety implementations, hazard identification, emergency protocol drafting, and occupational health standard compliance.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2>Get in Touch</h2>
+            <p>Open for professional consultation, strategic collaborations, and project oversight opportunities.</p>
+            <a href="mailto:Unisesrendon@gmail.com" class="btn">Contact via Gmail</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Unises R. Carbajosa Jr. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
